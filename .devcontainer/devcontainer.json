@@ -1,0 +1,15 @@
+{
+  "name": "pyzenmap-codespace",
+  "context": "..",
+  "dockerFile": "Dockerfile",
+  "workspaceFolder": "/workspaces/pyzenmap",
+  "forwardPorts": [6080],
+  "postCreateCommand": "pip3 install --no-cache-dir -r requirements.txt || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
